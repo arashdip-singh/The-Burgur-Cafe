@@ -1,0 +1,417 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.km{
+    position: sticky;
+    top: 0;
+}
+body {
+    background-image: url(back1.jpg);
+    font-family: Arial, sans-serif;
+    color: #f0f0f0;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #1c1c1c;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: #f4c542;
+    /* Golden color for the logo text */
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #f4c542;
+    /* Highlight color on hover */
+}
+
+.order-btn {
+    padding: 0.5rem 1rem;
+    background-color: #f4c542;
+    color: #121212;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s ease;
+}
+
+.order-btn:hover {
+    background-color: #ffd966;
+    /* Lighter shade on hover */
+}
+
+
+
+
+
+
+
+/* Hero Section Styling */
+.hero {
+    background-image: url('burger-background.jpg');
+    /* Add your burger image here */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f0f0f0;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    /* Dark overlay for better text readability */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #f4c542;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #f0f0f0;
+}
+
+.hero-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #f4c542;
+    color: #121212;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #ffd966;
+    /* Lighter shade on hover */
+}
+
+
+
+
+/* Featured Burgers Section Styling */
+.featured-burgers {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #1c1c1c;
+    color: #f0f0f0;
+}
+
+.featured-burgers h2 {
+    font-size: 2.5rem;
+    color: #f4c542;
+    margin-bottom: 2rem;
+}
+
+.burger-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.burger-item {
+    background-color: #2a2a2a;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.burger-item:hover {
+    transform: scale(1.05);
+}
+
+.burger-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.burger-info {
+    padding: 1rem;
+}
+
+.burger-info h3 {
+    font-size: 1.8rem;
+    color: #f4c542;
+    margin-bottom: 0.5rem;
+}
+
+.burger-info p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #d1d1d1;
+}
+
+.burger-info span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f4c542;
+}
+
+/* Buttons Styling */
+.burger-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.add-to-cart, .order-btn {
+    padding: 0.5rem 1rem;
+    background-color: #f4c542;
+    color: #121212;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover, .order-btn:hover {
+    background-color: #ffd966;
+}
+
+.add-to-cart:focus, .order-btn:focus {
+    outline: none;
+}
+
+
+
+
+/* About Us Section Styling */
+.about-us {
+    padding: 3rem 2rem;
+    background-color: #1c1c1c;
+    color: #f0f0f0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 500px;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: #f4c542;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #d1d1d1;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Special Offers Section Styling */
+.special-offers {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #1c1c1c;
+}
+
+.special-offers h2 {
+    font-size: 2.5rem;
+    color: #f4c542;
+    margin-bottom: 2rem;
+}
+
+.offer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: #2a2a2a;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.offer-details {
+    flex: 1;
+    color: #d1d1d1;
+}
+
+.offer-details h3 {
+    font-size: 2rem;
+    color: #f4c542;
+    margin-bottom: 0.5rem;
+}
+
+.offer-details p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #f0f0f0;
+}
+
+.countdown {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff6347;
+}
+
+.offer-image {
+    flex: 1;
+    max-width: 400px;
+}
+
+.offer-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/* Footer Section Styling */
+.footer {
+    background-color: #1c1c1c;
+    color: #d1d1d1;
+    padding: 2rem 1rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    color: #f4c542;
+    margin-bottom: 1rem;
+}
+
+.footer-section p,
+.footer-section a {
+    font-size: 0.9rem;
+    color: #d1d1d1;
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a:hover {
+    color: #f4c542;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    filter: invert(0.8);
+    /* Lighten icons on dark background */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid #333;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.footer-bottom p {
+    color: #999;
+}
